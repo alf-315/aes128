@@ -23,7 +23,7 @@ import shaded.org.apache.commons.codec.binary.Hex;
 /**
  * This class used to perform AES encryption and decryption.
  */
-public class AES256 extends CordovaPlugin {
+public class ChiperAES128 extends CordovaPlugin {
 
     private static final String ENCRYPT = "encrypt";
     private static final String DECRYPT = "decrypt";
