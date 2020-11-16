@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-aes128" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
   <name>ChiperAES128</name>
-  <js-module name="ChiperAES128" src="www/ChiperAES128.js">
-    <clobbers target="cordova.plugins.ChiperAES128" />
+  <js-module name="CipherAES128" src="www/CipherAES128.js">
+    <clobbers target="cordova.plugins.CipherAES128" />
   </js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="ChiperAES128">
-        <param name="android-package" value="com.lifegurad.aes128.ChiperAES128" />
+        <param name="android-package" value="com.lifegurad.aes128.CipherAES128" />
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml">
     </config-file>
-    <source-file src="src/android/ChiperAES128.java" target-dir="src/com/lifeguard/aes128/ChiperAES128" />
+    <source-file src="src/android/CipherAES128.java" target-dir="src/com/lifeguard/aes128/CipherAES128" />
     <framework src="src/android/plugin.gradle" custom="true" type="gradleReference"/>
   </platform>
 </plugin>
